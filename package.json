@@ -1,0 +1,27 @@
+{
+  "name": "nifty-cmd",
+  "version": "1.0.0",
+  "description": "Wrapper around nodejs exec",
+  "main": "nifty-cmd.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "exec",
+    "cmd",
+    "process",
+    "nifty",
+    "command"
+  ],
+  "author": "Trevor Baron",
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/TrevorDev/nifty-cmd.git"
+  },
+  "bugs": {
+    "url": "https://github.com/TrevorDev/nifty-cmd/issues"
+  },
+  "types": "./nifty-cmd.d.ts",
+  "homepage": "https://github.com/TrevorDev/nifty-cmd#readme"
+}
