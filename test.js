@@ -44,10 +44,17 @@ var kill = () => __awaiter(this, void 0, void 0, function* () {
     var running = cmd.run();
     cmd.kill();
 });
+var errRed = () => __awaiter(this, void 0, void 0, function* () {
+    var cmd = new nifty_cmd_1.default("sort -fdskfjsdjfksdjflksdjklf", { log: true });
+    var running = cmd.run();
+    cmd.writeToStdin("1\n3\n2");
+    cmd.writeToStdin(null);
+});
 var main = () => __awaiter(this, void 0, void 0, function* () {
     yield quickRun();
     yield longRun();
     yield longRunLog();
     yield kill();
+    yield errRed();
 });
 main();

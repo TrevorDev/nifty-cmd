@@ -40,11 +40,19 @@ var kill = async()=>{
 	cmd.kill()
 }
 
+var errRed = async()=>{
+	var cmd = new Command("sort -fdskfjsdjfksdjflksdjklf", {log: true})
+	var running = cmd.run()
+	cmd.writeToStdin("1\n3\n2")
+	cmd.writeToStdin(null)
+}
+
 var main = async()=>{
 	await quickRun()
 	await longRun()
 	await longRunLog()
 	await kill()
+	await errRed()
 }
 main()
 

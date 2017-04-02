@@ -23,5 +23,9 @@
     "url": "https://github.com/TrevorDev/nifty-cmd/issues"
   },
   "types": "./nifty-cmd.d.ts",
-  "homepage": "https://github.com/TrevorDev/nifty-cmd#readme"
+  "homepage": "https://github.com/TrevorDev/nifty-cmd#readme",
+  "dependencies": {
+    "@types/node": "^7.0.12",
+    "colors": "^1.1.2"
+  }
 }

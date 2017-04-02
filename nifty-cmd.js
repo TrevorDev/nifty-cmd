@@ -1,5 +1,6 @@
 "use strict";
 const cp = require("child_process");
+const colors = require("colors");
 let exec = cp.exec;
 class default_1 {
     constructor(cmd, options) {
@@ -15,7 +16,7 @@ class default_1 {
         }
         if (this.options.log) {
             this.options.onStdErr = (data) => {
-                process.stdout.write(data);
+                process.stdout.write(colors.red(data));
             },
                 this.options.onStdOut = (data) => {
                     process.stdout.write(data);

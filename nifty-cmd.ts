@@ -1,4 +1,5 @@
 import cp = require('child_process')
+import colors = require('colors');
 let exec = cp.exec
 
 // CMD RUNNER
@@ -17,7 +18,7 @@ export default class {
       //set logging function
       if(this.options.log){
         this.options.onStdErr = (data)=>{
-          process.stdout.write(data);
+          process.stdout.write(colors.red(data));
         },
         this.options.onStdOut = (data)=>{
           process.stdout.write(data);
